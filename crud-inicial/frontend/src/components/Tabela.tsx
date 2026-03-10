@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import useProdutos from "../hooks/useProdutos";
 
 export default function Tabela() {
-    const produtos = [
-        { nome: "Apagador", codigo: "ab1", preco: 1.99 },
-        { nome: "Garfo", codigo: "ab22", preco: 4.99 },
-        { nome: "Colher", codigo: "ab3", preco: 4.99 },
-    ];
+    const { produtos } = useProdutos()
+ 
     function renderizarCabecalho() {
         return (
             <tr>
