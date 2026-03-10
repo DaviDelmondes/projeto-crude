@@ -5,7 +5,7 @@ const repo = new RepositorioProdutos()
 const router = Router()
 
 router.get("/", (req,res)=>{
-    const dados = repo.obtertTodos()
+    const dados = repo.obterTodos()
     res.status(200).send(dados)
 })
 

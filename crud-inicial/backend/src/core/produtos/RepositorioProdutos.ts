@@ -5,7 +5,7 @@ export default class RepositorioProdutos{
                         new Produto("Mouse", 39.99),
                         new Produto("Teclado", 99.99)]
 
-    obtertTodos(){
+    obterTodos(){
         return this.itens
     }
 }
